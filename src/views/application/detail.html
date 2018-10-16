@@ -1,0 +1,108 @@
+<!-- @@master = ../layouts/default.html-->
+
+<!-- @@block  =  title -->
+<title>MB Agility 星智選 | 購車試算</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://www.mb-agility.com/mb/comparison" />
+
+<meta name="og:title" content="MB Agility 星智選 | 比較車款">
+<meta name="og:description" content="">
+<meta property="og:url" content="http://www.mb-agility.com/mb/">
+<meta name="og:image" content="http://www.mb-agility.com/mb/../../share-image.jpg">
+<!-- @@close -->
+
+<!-- @@block  =  head-css -->
+<link rel="stylesheet" href="js/pingin/jquery-ui-1.12.1.min.css">
+<link rel="stylesheet" href="js/pingin/jquery-ui-slider-pips.min.css">
+<!-- 20181016 Johnson -->
+<link rel="stylesheet" href="css/detail.css" type="text/css" media="all" />
+<!-- @@close -->
+
+<!-- @@block  =  head-js -->
+<script src="js/pingin/jquery-ui-slider-pips.js"></script>
+<script type="text/javascript" src="js/pingin/jquery.ui.touch-punch.min.js"></script>
+<script src="js/detail/circles.min.js"></script>
+<script src="js/detail/main.js"></script>
+<script>
+	$(function () {
+		menuShowHide(true);
+	});
+</script>
+<!-- @@close -->
+
+<!-- @@block  =  header-calculate -->
+class="active"
+<!-- @@close -->
+
+<!-- @@block = content -->
+<div id="detail" class="main">
+	<section id="keyvision">
+		<img src="images/slide-kv/detail-kv.jpg" class="visible-desktop" alt="">
+		<div class="kv-headtxt">
+			<h1>Agility 星智選</h1>
+		</div>
+	</section>
+	<section id="section1">
+		<div class="container">
+			<h2 class="title-line">車款資訊</h2>
+			<div class="car-detail">
+				<div class="images"><img src="images/calculate/car/c-class-r.png" alt=""></div>
+				<div class="info">
+					<h3 class="Daimler-Corpo-A">C-Class 休旅車</h3>
+					<p>C200 ESTATE AVANTGARDE<br>
+						建議售價 230 萬起</p>
+					<a href="#">更多詳情 >></a>
+				</div>
+			</div>
+			<div class="agility-program-info">
+				<h3>Agility財務方案</h3>
+				<div class="control">
+					<div class="down-payment-percent">
+						<p>頭款</p>
+						<div id="DPP-slider"></div>
+					</div>
+
+					<div class="terms">
+						<p>期數</p>
+						<div id="terms-slider"></div>
+					</div>
+				</div>
+				<div class="resultChart">
+					<div class="down-payment">
+						<div class="circle ag-circle" id="down-payment-circle"></div>
+					</div>
+					<div class="ag-monthly-payment">
+						<div class="circle ag-circle" id="ag-monthly-circle"></div>
+					</div>
+					<div class="basic-monthly-payment">
+						<div class="circle bs-circle" id="basic-monthly-circle"></div>
+					</div>
+				</div>
+				<div class="backBtn txtCenter">
+					<a class="blueTxt" href="calculate.html">&lt;&lt; 返回購車試算</a>
+				</div>
+			</div>
+			<div class="remark">
+				<p>備註：</p>
+				<ul class="numLst">
+					<li>方案內容及適用車型依台灣賓士資融公告為準。</li>
+					<li>Agility 星自選 購車優惠方案依據每年15,000公里里程數計，合約期滿時尚有尾款。</li>
+					<li>以上計算結果僅供參考，請與台灣賓士授權經銷商詢問詳細的車型價格。</li>
+					<li>台灣賓士資融仍保留核准與否權利。</li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+
+</div>
+
+<!-- @@close-->
+
+<!-- @@block  =  footer -->
+<footer class="bgft04 black">
+	<!-- @@include ../layouts/_footer.html -->
+</footer>
+<!-- @@close -->

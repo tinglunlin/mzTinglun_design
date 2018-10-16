@@ -1,0 +1,37 @@
+{
+  "window.zoomLevel": 0, // 自己使用的話可以調小一點(0 or 1就可)
+  "files.autoSave": "onFocusChange", //切換焦點存檔
+  // "editor.formatOnSave": true, // 存檔時自動格式調整
+  "editor.insertSpaces": true, // 以空白取代tab符號
+  "editor.tabSize": 2, // 縮排空白數
+  "emmet.triggerExpansionOnTab": true, //新版VSCode，使用Emmet有時候Tab會失效，要加這個，才會正常觸發emmet
+  // ----------- 以上為VScode基本設定 -----------
+  // ----------- 以下為Live Sever設定 -----------
+  "liveServer.settings.port": 8080, // Live Sever port，建議使用1024以上的port (設定port為0時，他會隨機抓一個未占用的port)
+  //"liveSassCompile.settings.excludeList": [], // 排除不要watch的目錄, 減少sass compiler去watch不必要的目錄
+  "liveSassCompile.settings.formats": [ // 需了解查看備註區之Live Sass compiler設定
+    // This is Default.
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/build/css"
+    },
+    // You can add more
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/build/css"
+    },
+    // More Complex
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../css/"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
