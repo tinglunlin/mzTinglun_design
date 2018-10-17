@@ -1,4 +1,7 @@
 $(function() {
+    //munu active
+    $('.carTrial').addClass('active');
+
     // loading to page add header no-fixed
     $('header').addClass('nofixed');
 
