@@ -1,4 +1,7 @@
-$(function () {
+$(function() {
+    //munu active
+    $('.carTrial').addClass('active');
+
     // loading to page add header no-fixed
     $('header').addClass('nofixed');
 
@@ -24,8 +27,8 @@ $(function () {
     // scroll to section
     $(window).scrollTop(0);
 
-    $('.modelNav li a').each(function () {
-        $.each(this.attributes, function () {
+    $('.modelNav li a').each(function() {
+        $.each(this.attributes, function() {
 
             if (this.specified) {
                 var hash22 = this.value;
@@ -43,7 +46,7 @@ $(function () {
     });
 
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         var scrollVal = $(this).scrollTop();
 
         // result bar scroll fixed
@@ -65,7 +68,7 @@ $(function () {
     });
 
     // add List Comparison 
-    $('.comparison').click(function () {
+    $('.comparison').click(function() {
         $(this).toggleClass('active');
 
         if ($(this).hasClass('active')) {
@@ -75,19 +78,19 @@ $(function () {
         }
     });
 
-    $('.type-item .modelLst li').click(function () {
+    $('.type-item .modelLst li').click(function() {
         $('.type-item .modelLst li').removeClass('active');
         $(this).toggleClass('active');
     });
 
     // Rresult Bar Terms 
-    $('#result .terms .dot-item').click(function () {
+    $('#result .terms .dot-item').click(function() {
         $(this).addClass('active');
         $(this).siblings('.dot-item').removeClass('active');
     });
 
     // Rresult Bar down-payment-percent 
-    $('#result .down-payment-percent .dot-item').click(function () {
+    $('#result .down-payment-percent .dot-item').click(function() {
         $(this).addClass('active');
         $(this).siblings('.dot-item').removeClass('active');
     });
@@ -107,7 +110,7 @@ $(function () {
 
 
     // replace hash
-    $('#modelNav li a').click(function () {
+    $('#modelNav li a').click(function() {
         var href = $(this).attr('href');
         location.replace(href);
     });
@@ -146,7 +149,8 @@ $(function () {
     });
 
     // expandMobile
-    // expandMobile();
+    expandMobile();
+
     function expandMobile() {
 
         var wWidth = $(window).width();
@@ -154,7 +158,7 @@ $(function () {
         var $DPP = $('#result .down-payment-percent');
 
         // Result Bar on mobile expand
-        $('#result .calculate-result .expand').click(function () {
+        $('#result .calculate-result .expand').click(function() {
             if (!$terms.is(':visible') && $DPP.is(':visible')) {
                 $('#result .terms:visible').slideUp();
                 $('#result .down-payment-percent:visible').slideUp();
@@ -176,7 +180,7 @@ $(function () {
             $('.modelLst li.mo .cta-btn').hide();
             $('.modelLst li.mo.active .cta-btn').show();
 
-            $('.modelLst li .product-name, .modelLst li .btline').click(function () {
+            $('.modelLst li .product-name, .modelLst li .btline').click(function() {
                 var $ctaBtn = $(this).siblings('div.cta-btn');
 
                 if (!$ctaBtn.is(':visible')) {
@@ -189,7 +193,7 @@ $(function () {
 
     // resize width
     w = $(window).width();
-    $(window).resize(function () {
+    $(window).resize(function() {
         if ($(window).width() == w) return;
         w = $(window).width();
 
