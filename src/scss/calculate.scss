@@ -450,7 +450,12 @@
 			color: $mb-blue;
 			font-size: 2.1em;
 			padding-bottom: 1.6em;
+
+			&.l_p_b_0 {
+				padding-bottom: 0;
+			}
 		}
+
 
 		.modelNav {
 			margin-bottom: 40px;
@@ -627,7 +632,7 @@
 
 				@media (min-width: 576px) {
 					width: 50%;
-					padding: 1em;
+					padding: 1.5em 1em;
 				}
 
 				@media (min-width: 992px) {
@@ -870,24 +875,24 @@
 				@media (min-width: 992px) {
 					padding: 4em 0;
 
-					&:nth-of-type(even) {
-						.model-type {
-							.type-image {
-								float: right;
-							}
+					// &:nth-of-type(even) {
+					// 	.model-type {
+					// 		.type-image {
+					// 			float: right;
+					// 		}
 
-							.title {
-								float: right;
-								padding-left: 2em;
-							}
+					// 		.title {
+					// 			float: right;
+					// 			padding-left: 2em;
+					// 		}
 
-							.line-hr {
-								right: auto;
-								left: 0;
-								top: 50px;
-							}
-						}
-					}
+					// 		.line-hr {
+					// 			right: auto;
+					// 			left: 0;
+					// 			top: 50px;
+					// 		}
+					// 	}
+					// }
 				}
 
 			}
