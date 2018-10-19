@@ -6,6 +6,7 @@ $(function() {
     $('.kvSlider').slick({
         dots: true,
         arrows: false,
+        autoplay: true,
         infinite: false,
         speed: 500,
         slidesToShow: 1,
