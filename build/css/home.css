@@ -346,7 +346,7 @@
   #home #section3 .myContainer li h4, #home #section3 .threeSelection li h4 { font-size: 24px; padding-bottom: 0.5em; }
   #home #section3 .myContainer li p, #home #section3 .threeSelection li p { font-size: 16px; line-height: 1.6em; } }
 
-#home #section4 { background-color: #000; background-image: url(../images/home/s4-bg.png); background-position: center bottom; background-repeat: no-repeat; }
+#home #section4 { background-color: #000; background-image: url(../images/home/s4-bg.jpg); background-position: center bottom; background-repeat: no-repeat; background-size: cover; }
 
 #home #section4 h2 { display: inline-block; font-size: 1.8em; line-height: 1.5em; color: #fff; position: relative; padding-bottom: 15px; }
 
@@ -401,7 +401,7 @@
   #home #section4 .advantage .item { padding: 30px 10px; }
   #home #section4 .advantage .icon img { width: 75px; } }
 
-@media (min-width: 992px) { #home #section4 .advantage { padding: 30vh 0; }
+@media (min-width: 992px) { #home #section4 .advantage { padding: 25vh 0; }
   #home #section4 .advantage .icon { text-align: left; } }
 
 @media (min-width: 1200px) { #home #section4 .advantage .icon img { width: 80px; }

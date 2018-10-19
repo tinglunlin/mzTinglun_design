@@ -932,9 +932,10 @@
             }
         }
         background-color: #000;
-        background-image: url(../images/home/s4-bg.png);
+        background-image: url(../images/home/s4-bg.jpg);
         background-position: center bottom;
         background-repeat: no-repeat;
+        background-size: cover;
         .advantage {
             padding: 10vh 0;
             text-align: center;
@@ -1029,7 +1030,7 @@
                 }
             }
             @media (min-width: 992px) {
-                padding: 30vh 0;
+                padding: 25vh 0;
                 .icon {
                     text-align: left;
                 }
