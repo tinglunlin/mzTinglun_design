@@ -1,7 +1,8 @@
 /* Home -------------------------------------------*/
 .main#home { border-top: none; }
 
-/* s1 ----------------------- */
+#home a { display: block; color: #2baae1; font-size: 1.1em; line-height: 1.44em; }
+
 #home #keyVision .slick-dotted.slick-slider { margin-bottom: 0; }
 
 #home #keyVision .slick-list { width: 100%; }
@@ -139,7 +140,7 @@
   #home #section1 .visible-mobile .features .icon { width: 25%; display: inline-block; }
   #home #section1 .visible-mobile .features .features-text { width: 75%; text-align: left; padding-left: 40px; } }
 
-#home #section2 { background: #000000; }
+#home #section2 { background: #000000; position: relative; z-index: 1; }
 
 #home #section2 .myContainer { width: 90%; max-width: 1340px; margin: 0 auto; position: relative; }
 
@@ -281,6 +282,12 @@
 #home #section2 .tabContent .informationRight li { font-size: 1.36em; line-height: 1.44em; position: relative; padding-left: 1em; margin-bottom: 12px; }
 
 #home #section2 .tabContent .informationRight li:before { content: '-'; display: inline-block; padding-right: 0.5em; position: absolute; margin-left: -1em; }
+
+#home #section2 .tabContent .informationRight .assignCarBtn { width: 100%; display: block; text-align: right; }
+
+@media screen and (max-width: 767px) { #home #section2 .tabContent .informationRight .assignCarBtn { text-align: left; } }
+
+#home #section2 .tabContent .informationRight .assignCarBtn a { font-size: 1.36em; line-height: 1.44em; display: inline-block; }
 
 #home #section2 .tabContent .infoTitle { color: #2baae1; font-size: 2em; line-height: 1.4em; font-weight: bold; text-align: center; margin-bottom: 5%; }
 
