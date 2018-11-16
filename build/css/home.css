@@ -305,7 +305,7 @@
 
 #home #section3 { background: #000000; }
 
-#home #section3 .myContainer { width: 90%; max-width: 1340px; margin: 0 auto; position: relative; top: -150px; }
+#home #section3 .myContainer { width: 90%; max-width: 1340px; margin: 0 auto; position: relative; background: #000000; }
 
 #home #section3 .txtHead { width: 100%; text-align: center; color: #ffffff; margin-bottom: 5%; }
 
@@ -322,36 +322,95 @@
 @media screen and (max-width: 992px) { #home #section3 .txtHead h2 { font-size: 2em; }
   #home #section3 .txtHead h2:first-child:before, #home #section3 .txtHead h2:first-child:after { width: 12%; } }
 
-#home #section3 .threeSelection { width: 100%; display: block; font-size: 0; position: relative; top: -150px; }
+#home #section3 .future { font-size: 0; margin-bottom: 5%; }
 
-#home #section3 .threeSelection li { width: 33.3333%; display: inline-block; padding: 7% 0 12% 0; background-position: center; background-repeat: no-repeat; background-size: cover; color: #ffffff; vertical-align: top; position: relative; }
+#home #section3 .future .futureImg { width: 45%; display: inline-block; vertical-align: middle; margin-right: 5%; }
 
-#home #section3 .threeSelection li:before { content: ''; width: 100%; height: 100%; background: #000000; position: absolute; top: 0; right: 0; left: 0; bottom: 0; opacity: 0.6; z-index: -1; -webkit-transition: all 0.3s; transition: all 0.3s; }
+#home #section3 .future .futureContent { width: 50%; display: inline-block; vertical-align: middle; text-align: center; color: #ffffff; }
+
+#home #section3 .future .futureContent .futureLine { width: 100%; height: 1px; background-color: rgba(255, 255, 255, 0.35); margin: 30px 0; }
+
+#home #section3 .future .futureContent h4, #home #section3 .future .futureContent .futureList { font-size: 24px; line-height: 1.44em; margin-bottom: 0.8em; }
+
+#home #section3 .future .futureContent p { font-size: 20px; line-height: 1.88em; }
+
+#home #section3 .future .futureContent .futureList { text-align: left; }
+
+#home #section3 .future .futureContent .futureList > li { display: inline-block; position: relative; padding: 1.5em 0; }
+
+#home #section3 .future .futureContent .futureList > li:nth-child(1):before { content: 'Renew'; }
+
+#home #section3 .future .futureContent .futureList > li:nth-child(2):before { content: 'Retain'; }
+
+#home #section3 .future .futureContent .futureList > li:nth-child(3):before { content: 'Return'; }
+
+#home #section3 .future .futureContent .futureList > li:before { position: relative; font-size: 2.4em; font-weight: bold; top: -0.3em; left: 0.75em; opacity: 0.3; }
+
+#home #section3 .future .futureContent .futureList > li span { color: #2baae1; margin-right: 15px; }
+
+@media (max-width: 1399px) { #home #section3 .future .futureImg { width: 43%; margin-right: 3%; }
+  #home #section3 .future .futureContent { width: 54%; }
+  #home #section3 .future .futureContent h4, #home #section3 .future .futureContent .futureList { font-size: 20px; line-height: 1.44em; margin-bottom: 0.8em; }
+  #home #section3 .future .futureContent p { font-size: 16px; line-height: 1.88em; } }
+
+@media (max-width: 1099px) { #home #section3 .future .futureContent .futureList > li { text-indent: -1.5em; } }
+
+@media (max-width: 1024px) { #home #section3 .future .futureImg { width: 90%; max-width: 550px; display: block; margin: 0 auto; margin-bottom: 5%; }
+  #home #section3 .future .futureContent { width: 90%; display: block; margin: 0 auto; }
+  #home #section3 .future .futureContent .futureList { text-align: center; } }
+
+#home #section3 .threeSelection { width: 100%; display: table; font-size: 0; position: relative; }
+
+#home #section3 .threeSelection li { width: 33.3333%; display: table-cell; padding: 7% 0; background-position: center; background-repeat: no-repeat; background-size: cover; color: #ffffff; vertical-align: top; position: relative; }
+
+#home #section3 .threeSelection li:before { content: ''; width: 100%; height: 100%; background: #000000; position: absolute; top: 0; right: 0; left: 0; bottom: 0; opacity: 0.6; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
 #home #section3 .threeSelection li:hover:before { opacity: 0.4; }
 
-#home #section3 .threeSelection li:nth-child(1) { background-image: url(../images/home/s3-imgbg01.jpg); }
+#home #section3 .threeSelection li:nth-child(1) { background-image: url(../images/home/s3/s3-imgbg01.jpg); }
 
-#home #section3 .threeSelection li:nth-child(2) { background-image: url(../images/home/s3-imgbg02.jpg); }
+#home #section3 .threeSelection li:nth-child(1) p:before { content: 'Renew'; }
 
-#home #section3 .threeSelection li:nth-child(3) { background-image: url(../images/home/s3-imgbg03.jpg); }
+#home #section3 .threeSelection li:nth-child(2) { background-image: url(../images/home/s3/s3-imgbg02.jpg); }
 
-#home #section3 .threeSelection li h4 { font-size: 32px; line-height: 1.4em; font-weight: normal; padding-bottom: 1.5em; text-align: center; color: #2baae1; }
+#home #section3 .threeSelection li:nth-child(2) p:before { content: 'Retain'; }
 
-#home #section3 .threeSelection li p { font-size: 22px; line-height: 2em; }
+#home #section3 .threeSelection li:nth-child(3) { background-image: url(../images/home/s3/s3-imgbg03.jpg); }
+
+#home #section3 .threeSelection li:nth-child(3) p:before { content: 'Return'; }
+
+#home #section3 .threeSelection li h4 { display: inline-block; font-size: 32px; line-height: 1.4em; font-weight: normal; padding-bottom: 1.5em; text-align: center; position: relative; }
+
+#home #section3 .threeSelection li h4 > span { color: #2baae1; margin-right: 15px; }
+
+#home #section3 .threeSelection li h4:before { position: absolute; font-size: 1.8em; font-weight: bold; top: -0.6em; left: -2em; opacity: 0.3; }
+
+#home #section3 .threeSelection li p { font-size: 22px; line-height: 1.88em; position: relative; z-index: 1; }
+
+#home #section3 .threeSelection li p:before { position: absolute; font-size: 2.63em; font-weight: bold; top: -0.5em; left: -0.7em; opacity: 0.3; }
 
 @media screen and (max-width: 1440px) { #home #section3 .threeSelection li h4 { font-size: 26px; }
   #home #section3 .threeSelection li p { font-size: 20px; } }
 
 #home #section3 .threeSelection li .threeSelectionTxt { width: 66%; margin: 0 auto; }
 
-@media screen and (max-width: 992px) { #home #section3 .hidden-desktop { display: block !important; }
-  #home #section3 .myContainer, #home #section3 .threeSelection { width: 90%; top: auto; margin: 5% auto 0; }
-  #home #section3 .myContainer li, #home #section3 .threeSelection li { width: 100%; display: block; padding: 10% 4%; margin-bottom: 20px; }
+@media screen and (max-width: 1024px) { #home #section3 .myContainer, #home #section3 .threeSelection { width: 95%; top: auto; margin: 5% auto 0; }
+  #home #section3 .myContainer li, #home #section3 .threeSelection li { width: 100%; margin: 0 auto; display: block; padding: 20% 6%; margin-bottom: 20px; }
   #home #section3 .myContainer li:before, #home #section3 .threeSelection li:before { z-index: 0; }
+  #home #section3 .myContainer li:nth-child(1) h4:before, #home #section3 .threeSelection li:nth-child(1) h4:before { content: 'Renew'; }
+  #home #section3 .myContainer li:nth-child(2) h4:before, #home #section3 .threeSelection li:nth-child(2) h4:before { content: 'Retain'; }
+  #home #section3 .myContainer li:nth-child(3) h4:before, #home #section3 .threeSelection li:nth-child(3) h4:before { content: 'Return'; }
   #home #section3 .myContainer li .threeSelectionTxt, #home #section3 .threeSelection li .threeSelectionTxt { width: 100%; text-align: center; position: relative; }
-  #home #section3 .myContainer li h4, #home #section3 .threeSelection li h4 { font-size: 24px; padding-bottom: 0.5em; }
-  #home #section3 .myContainer li p, #home #section3 .threeSelection li p { font-size: 16px; line-height: 1.6em; } }
+  #home #section3 .myContainer li h4, #home #section3 .threeSelection li h4 { font-size: 24px; padding-bottom: 0.8em; }
+  #home #section3 .myContainer li p, #home #section3 .threeSelection li p { font-size: 16px; line-height: 1.6em; }
+  #home #section3 .myContainer li p:before, #home #section3 .threeSelection li p:before { content: none !important; } }
+
+@media screen and (max-width: 992px) { #home #section3 .hidden-desktop { display: block !important; } }
+
+@media screen and (max-width: 767px) { #home #section3 .myContainer li, #home #section3 .threeSelection li { padding: 30% 4%; }
+  #home #section3 .myContainer li h4, #home #section3 .threeSelection li h4 { display: block; font-size: 22px; padding-bottom: 1.44em; }
+  #home #section3 .myContainer li h4:before, #home #section3 .threeSelection li h4:before { font-size: 2.8em; left: 0; top: -1em; }
+  #home #section3 .myContainer li h4 span, #home #section3 .threeSelection li h4 span { margin: 0; display: block; } }
 
 #home #section4 { background-color: #000; background-image: url(../images/home/s4-bg.jpg); background-position: center bottom; background-repeat: no-repeat; background-size: cover; }
 

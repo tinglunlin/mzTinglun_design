@@ -122,43 +122,43 @@ $(function() {
             }),
         ]);
 
-    var tween3 = new TimelineMax()
-        .add([
-            TweenMax.fromTo("#txtHead3", 1, {
-                y: 100,
-                top: 0,
-                opacity: 0
-            }, {
-                y: 0,
-                opacity: 1,
-                ease: Power3.easeInOut
-            }),
+    // var tween3 = new TimelineMax()
+    //     .add([
+    //         TweenMax.fromTo("#txtHead3", 1, {
+    //             y: 100,
+    //             top: 0,
+    //             opacity: 0
+    //         }, {
+    //             y: 0,
+    //             opacity: 1,
+    //             ease: Power3.easeInOut
+    //         }),
 
-            TweenMax.fromTo("#ts1", 2, {
-                y: 100,
-                opacity: 0
-            }, {
-                y: 0,
-                opacity: 1,
-                ease: Power3.easeInOut
-            }),
-            TweenMax.fromTo("#ts2", 4, {
-                y: 100,
-                opacity: 0
-            }, {
-                y: 0,
-                opacity: 1,
-                ease: Power3.easeInOut
-            }),
-            TweenMax.fromTo("#ts3", 5, {
-                y: 100,
-                opacity: 0
-            }, {
-                y: 0,
-                opacity: 1,
-                ease: Power3.easeInOut
-            }),
-        ]);
+    //         TweenMax.fromTo("#ts1", 2, {
+    //             y: 100,
+    //             opacity: 0
+    //         }, {
+    //             y: 0,
+    //             opacity: 1,
+    //             ease: Power3.easeInOut
+    //         }),
+    //         TweenMax.fromTo("#ts2", 4, {
+    //             y: 100,
+    //             opacity: 0
+    //         }, {
+    //             y: 0,
+    //             opacity: 1,
+    //             ease: Power3.easeInOut
+    //         }),
+    //         TweenMax.fromTo("#ts3", 5, {
+    //             y: 100,
+    //             opacity: 0
+    //         }, {
+    //             y: 0,
+    //             opacity: 1,
+    //             ease: Power3.easeInOut
+    //         }),
+    //     ]);
 
 
     // build tween
@@ -186,17 +186,17 @@ $(function() {
         }, 500);
     }
 
-    function fadeout3() {
-        $("#scene3").animate({
-            opacity: 0
-        }, 500);
-    }
+    // function fadeout3() {
+    //     $("#scene3").animate({
+    //         opacity: 0
+    //     }, 500);
+    // }
 
-    function fadein3() {
-        $("#scene3").animate({
-            opacity: 1
-        }, 500);
-    }
+    // function fadein3() {
+    //     $("#scene3").animate({
+    //         opacity: 1
+    //     }, 500);
+    // }
 
 
     function number(a, b, c, d, start) {
@@ -287,21 +287,21 @@ $(function() {
         // .addIndicators()
         .addTo(controller);
 
-    var screen31 = new ScrollMagic.Scene({
-            triggerElement: "#scene3",
-            duration: 1500,
-            offset: 150
-        })
-        .setTween(tween3)
-        .setPin("#scene3")
-        .on("enter", function(event) {
-            fadein3();
-        })
-        .on("leave", function(event) {
-            fadeout3();
-        })
-        // .addIndicators()
-        .addTo(controller);
+    // var screen31 = new ScrollMagic.Scene({
+    //         triggerElement: "#scene3",
+    //         duration: 1500,
+    //         offset: 150
+    //     })
+    //     .setTween(tween3)
+    //     .setPin("#scene3")
+    //     .on("enter", function(event) {
+    //         fadein3();
+    //     })
+    //     .on("leave", function(event) {
+    //         fadeout3();
+    //     })
+    //     // .addIndicators()
+    //     .addTo(controller);
 });
 
 // section2 & section3 scroll AN
@@ -404,6 +404,22 @@ $(function() {
             y: '0%',
             opacity: 1
         }));
+        superscroll.addTween('#s3-mo-scene3', TweenMax.fromTo($('#futureImgM'), .5, {
+            y: '15%',
+            opacity: 0,
+            immediateRender: true
+        }, {
+            y: '0%',
+            opacity: 1
+        }));
+        superscroll.addTween('#s3-mo-scene3', TweenMax.fromTo($('#futureContentM'), .5, {
+            y: '15%',
+            opacity: 0,
+            immediateRender: true
+        }, {
+            y: '0%',
+            opacity: 1
+        }));
         superscroll.addTween('#s3-mo-scene3', TweenMax.fromTo($('#ts1M'), .5, {
             y: '15%',
             opacity: 0,
@@ -471,6 +487,51 @@ $(function() {
         }));
 
     } else {
+        // s3
+        superscroll.addTween('#scene3', (new TimelineLite())
+            .append([TweenMax.fromTo($('#txtHead3'), .5, {
+                y: '20%',
+                opacity: 0,
+                immediateRender: true
+            }, {
+                y: '0%',
+                opacity: 1
+            })])
+            .append([TweenMax.fromTo($('#future'), 1, {
+                y: '20%',
+                opacity: 0,
+                immediateRender: true
+            }, {
+                y: '0%',
+                opacity: 1
+            })]), 600);
+        superscroll.addTween('#threeSelection', (new TimelineLite())
+            .append([TweenMax.fromTo($('#ts1'), 1, {
+                    x: '-50%',
+                    opacity: 0,
+                    immediateRender: true
+                }, {
+                    x: '0%',
+                    opacity: 1
+                }),
+                TweenMax.fromTo($('#ts2'), 1, {
+                    y: '-50%',
+                    opacity: 0,
+                    immediateRender: true
+                }, {
+                    y: '0%',
+                    opacity: 1
+                }),
+                TweenMax.fromTo($('#ts3'), 1, {
+                    x: '50%',
+                    opacity: 0,
+                    immediateRender: true
+                }, {
+                    x: '0%',
+                    opacity: 1
+                })
+            ]), 300);
+        // s4
         superscroll.addTween('#section4', (new TimelineLite())
             .append([TweenMax.fromTo($('#advantage-title'), .5, {
                 y: '50%',
