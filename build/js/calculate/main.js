@@ -60,9 +60,9 @@ $(function() {
 
         // 比較車種 按鈕 fixed
         if (scrollVal > s1_marginT) {
-            $('#car-comparison').addClass('fixed');
+            $('#car-comparison-btn').addClass('fixed');
         } else {
-            $('#car-comparison').removeClass('fixed')
+            $('#car-comparison-btn').removeClass('fixed')
         }
 
     });

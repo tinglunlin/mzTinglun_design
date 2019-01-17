@@ -693,8 +693,7 @@
                     span {
                         // display: none;
                         width: 0%;
-                        height: 2px;
-                        // display: block;
+                        height: 2px; // display: block;
                         background-color: #2baae1;
                         position: absolute;
                         top: 50%;
@@ -772,7 +771,7 @@
         }
     }
 }
-.car-comparison {
+.car-comparison-btn {
     width: 40px;
     position: fixed;
     top: 50%;

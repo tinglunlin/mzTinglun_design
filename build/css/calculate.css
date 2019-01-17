@@ -269,21 +269,21 @@
 
 @media (min-width: 992px) { #calculate .modelCont .type-item { padding: 4em 0; } }
 
-.car-comparison { width: 40px; position: fixed; top: 50%; right: 0; font-size: 1.3em; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
+.car-comparison-btn { width: 40px; position: fixed; top: 50%; right: 0; font-size: 1.3em; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 
-.car-comparison a { display: block; width: 100%; -webkit-writing-mode: vertical-lr; -ms-writing-mode: tb-lr; writing-mode: vertical-lr; color: #fff; padding: 10px 10px 5px 10px; margin-bottom: 15px; background-image: -webkit-gradient(linear, left bottom, left top, from(#0077b4), color-stop(51%, #28aae1), to(#28aae1)); background-image: linear-gradient(to top, #0077b4, #28aae1 51%, #28aae1); }
+.car-comparison-btn a { display: block; width: 100%; -webkit-writing-mode: vertical-lr; -ms-writing-mode: tb-lr; writing-mode: vertical-lr; color: #fff; padding: 10px 10px 5px 10px; margin-bottom: 15px; background-image: -webkit-gradient(linear, left bottom, left top, from(#0077b4), color-stop(51%, #28aae1), to(#28aae1)); background-image: linear-gradient(to top, #0077b4, #28aae1 51%, #28aae1); }
 
-.car-comparison a:hover { background-image: -webkit-gradient(linear, left bottom, left top, from(#0088c6), to(#0088c6)); background-image: linear-gradient(to top, #0088c6, #0088c6); }
+.car-comparison-btn a:hover { background-image: -webkit-gradient(linear, left bottom, left top, from(#0088c6), to(#0088c6)); background-image: linear-gradient(to top, #0088c6, #0088c6); }
 
-.car-comparison.fixed { opacity: 1; z-index: 5; }
+.car-comparison-btn.fixed { opacity: 1; z-index: 5; }
 
-.car-comparison span { width: 100%; height: 17px; display: inline-block; position: relative; }
+.car-comparison-btn span { width: 100%; height: 17px; display: inline-block; position: relative; }
 
-.car-comparison span:before, .car-comparison span:after { content: ''; display: block; position: absolute; width: 10px; height: 2px; background-color: #fff; }
+.car-comparison-btn span:before, .car-comparison-btn span:after { content: ''; display: block; position: absolute; width: 10px; height: 2px; background-color: #fff; }
 
-.car-comparison span:before { -webkit-transform: translate(8px, 9px) rotate(-45deg); transform: translate(8px, 9px) rotate(-45deg); }
+.car-comparison-btn span:before { -webkit-transform: translate(8px, 9px) rotate(-45deg); transform: translate(8px, 9px) rotate(-45deg); }
 
-.car-comparison span:after { -webkit-transform: translate(2px, 9px) rotate(45deg); transform: translate(2px, 9px) rotate(45deg); }
+.car-comparison-btn span:after { -webkit-transform: translate(2px, 9px) rotate(45deg); transform: translate(2px, 9px) rotate(45deg); }
 
 @keyframes optop { from { opacity: 0;
     -webkit-transform: translateY(-50%);
