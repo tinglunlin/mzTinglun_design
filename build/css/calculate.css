@@ -75,7 +75,7 @@
 
 #calculate #result .expand { width: 25px; height: 25px; border-radius: 50%; background: #fff; position: absolute; top: -15px; right: 0; border: 1px solid #383838; cursor: pointer; background-image: -webkit-gradient(linear, left bottom, left top, from(#080808), color-stop(94%, #272727)); background-image: linear-gradient(to top, #080808, #272727 94%); }
 
-#calculate #result .expand:before, #calculate #result .expand:after { content: ''; display: block; position: absolute; width: 50%; height: 1px; top: 50%; left: 50%; -webkit-transform: translate(-6px, 0); transform: translate(-6px, 0); background-color: #fff; -webkit-transition: -webkit-transform .3s; transition: -webkit-transform .3s; transition: transform .3s; transition: transform .3s, -webkit-transform .3s; }
+#calculate #result .expand:before, #calculate #result .expand:after { content: ''; display: block; position: absolute; width: 50%; height: 1px; top: 50%; left: 50%; -webkit-transform: translate(-6px, 0); transform: translate(-6px, 0); background-color: #fff; -webkit-transition: -webkit-transform 0.3s; transition: -webkit-transform 0.3s; transition: transform 0.3s; transition: transform 0.3s, -webkit-transform 0.3s; }
 
 #calculate #result .expand:before { -webkit-transform: translate(-6px, -2px); transform: translate(-6px, -2px); }
 
@@ -111,7 +111,7 @@
 
 @media (min-width: 992px) { #calculate #result .product-name { padding-bottom: 0; border-bottom: none; border-right: 1px solid #383838; } }
 
-#calculate #result .product-name .ConTxt { font-family: Daimler-Corpo-AC, "Times New Roman", MingLiU, '新細明體', serif !important; }
+#calculate #result .product-name .ConTxt { font-family: Daimler-Corpo-AC, 'Times New Roman', MingLiU, '新細明體', serif !important; }
 
 #calculate #result .product-name span, #calculate #result .product-name span.tag { font-size: 0.9em; display: inline-block; }
 
@@ -121,7 +121,7 @@
 
 #calculate #result .offertogo { vertical-align: middle; }
 
-#calculate #result .offertogo a { height: 47px; line-height: 47px; padding: 10px 3px; color: #ffffff; background-color: #2baae1; background-image: -webkit-gradient(linear, left bottom, left top, from(#0077b4), color-stop(51%, #28aae1), to(#28aae1)); background-image: linear-gradient(to top, #0077b4, #28aae1 51%, #28aae1); border-radius: 5px; -webkit-transition: all .3s; transition: all .3s; }
+#calculate #result .offertogo a { height: 47px; line-height: 47px; padding: 10px 3px; color: #ffffff; background-color: #2baae1; background-image: -webkit-gradient(linear, left bottom, left top, from(#0077b4), color-stop(51%, #28aae1), to(#28aae1)); background-image: linear-gradient(to top, #0077b4, #28aae1 51%, #28aae1); border-radius: 5px; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
 @media (min-width: 992px) { #calculate #result .offertogo a { height: 70px; line-height: 70px; padding: 10px 15px; } }
 
@@ -147,7 +147,7 @@
 
 #calculate #section1 .modelNav { font-size: 0; text-indent: 0; }
 
-#calculate #section1 .modelNav li { display: inline-block; width: 16.6666666667%; height: 50px; line-height: 50px; font-family: Daimler-Corpo-AC, "Times New Roman", MingLiU, '新細明體', serif !important; text-align: center; border-right: 1px solid #404040; }
+#calculate #section1 .modelNav li { display: inline-block; width: 16.6666666667%; height: 50px; line-height: 50px; font-family: Daimler-Corpo-AC, 'Times New Roman', MingLiU, '新細明體', serif !important; text-align: center; border-right: 1px solid #404040; }
 
 #calculate #section1 .modelNav li a { color: #878787; display: block; font-size: 1.5em; }
 
@@ -157,131 +157,133 @@
 
 #calculate #section1 .modelNav li:last-of-type { border-right: none; }
 
-#calculate #section1 .model-type { padding-bottom: 2em; }
+#calculate .model-type { padding-bottom: 2em; }
 
-#calculate #section1 .model-type:after { content: ''; display: table; clear: both; }
+#calculate .model-type:after { content: ''; display: table; clear: both; }
 
-#calculate #section1 .model-type .type-image { width: 40%; float: left; margin-top: 15px; }
+#calculate .model-type .type-image { width: 40%; float: left; margin-top: 15px; }
 
-#calculate #section1 .model-type .type-image img { max-width: 445px; }
+#calculate .model-type .type-image img { max-width: 445px; }
 
-@media (min-width: 992px) { #calculate #section1 .model-type .type-image { width: 30%; margin-top: 0; } }
+@media (min-width: 992px) { #calculate .model-type .type-image { width: 30%; margin-top: 0; } }
 
-#calculate #section1 .model-type .type-headTxt { width: 60%; float: left; position: relative; }
+#calculate .model-type .type-headTxt { width: 60%; float: left; position: relative; }
 
-#calculate #section1 .model-type .type-headTxt:after { content: ''; display: table; clear: both; }
+#calculate .model-type .type-headTxt:after { content: ''; display: table; clear: both; }
 
-@media (min-width: 992px) { #calculate #section1 .model-type .type-headTxt { width: 70%; } }
+@media (min-width: 992px) { #calculate .model-type .type-headTxt { width: 70%; } }
 
-#calculate #section1 .model-type .title { float: left; width: 100%; }
+#calculate .model-type .title { float: left; width: 100%; }
 
-@media (min-width: 992px) { #calculate #section1 .model-type .title { width: 35%; } }
+@media (min-width: 992px) { #calculate .model-type .title { width: 35%; } }
 
-#calculate #section1 .model-type .line-hr { float: left; position: absolute; width: 65%; height: 1px; top: 20px; bottom: 0; right: 0; margin: auto; display: none; }
+#calculate .model-type .line-hr { float: left; position: absolute; width: 65%; height: 1px; top: 20px; bottom: 0; right: 0; margin: auto; display: none; }
 
-#calculate #section1 .model-type .line-hr span { display: block; width: 100%; height: 1px; background-color: #404040; }
+#calculate .model-type .line-hr span { display: block; width: 100%; height: 1px; background-color: #404040; }
 
-@media (min-width: 992px) { #calculate #section1 .model-type .line-hr { display: block; } }
+@media (min-width: 992px) { #calculate .model-type .line-hr { display: block; } }
 
-#calculate #section1 .model-type .model-name { display: inline-block; font-size: 2.5em; color: #ececec; color: rgba(236, 236, 236, 0.15); position: relative; }
+#calculate .model-type .model-name { display: inline-block; font-size: 2.5em; color: #ececec; color: rgba(236, 236, 236, 0.15); position: relative; }
 
-@media (min-width: 992px) { #calculate #section1 .model-type .model-name { font-size: 2.9em; } }
+@media (min-width: 992px) { #calculate .model-type .model-name { font-size: 2.9em; } }
 
-#calculate #section1 .model-type .model-type-title { display: inline-block; font-size: 1.5em; color: #fff; position: relative; left: -15px; top: 20px; }
+#calculate .model-type .model-type-title { display: inline-block; font-size: 1.5em; color: #fff; position: relative; left: -15px; top: 20px; }
 
-@media (min-width: 992px) { #calculate #section1 .model-type .model-type-title { font-size: 1.8em; } }
+@media (min-width: 992px) { #calculate .model-type .model-type-title { font-size: 1.8em; } }
 
-#calculate #section1 .modelLst ul { font-size: 0; text-indent: 0; }
+#calculate .modelLst ul { font-size: 0; text-indent: 0; }
 
-#calculate #section1 .modelLst li { display: inline-block; width: 100%; padding: 0.5em; vertical-align: bottom; cursor: pointer; }
+#calculate .modelLst li { display: inline-block; width: 100%; padding: 0.5em; vertical-align: bottom; cursor: pointer; }
 
-@media (min-width: 576px) { #calculate #section1 .modelLst li { width: 50%; padding: 1.5em 1em; } }
+@media (min-width: 576px) { #calculate .modelLst li { width: 50%; padding: 1.5em 1em; } }
 
-@media (min-width: 992px) { #calculate #section1 .modelLst li { width: 33.333%; } }
+@media (min-width: 992px) { #calculate .modelLst li { width: 33.333%; } }
 
-@media (min-width: 1200px) { #calculate #section1 .modelLst li { width: 25%; } }
+@media (min-width: 1200px) { #calculate .modelLst li { width: 25%; } }
 
-#calculate #section1 .modelLst li:hover .product-name, #calculate #section1 .modelLst li.active .product-name { color: #2baae1; }
+#calculate .modelLst li:hover .product-name, #calculate .modelLst li.active .product-name { color: #2baae1; }
 
-#calculate #section1 .modelLst li:hover .btline span, #calculate #section1 .modelLst li.active .btline span { left: 0; margin-left: 0; -webkit-transition: left .3s; transition: left .3s; }
+#calculate .modelLst li:hover .btline span, #calculate .modelLst li.active .btline span { left: 0; margin-left: 0; -webkit-transition: left 0.3s; transition: left 0.3s; }
 
-#calculate #section1 .modelLst .product-name { font-size: 1.4em; line-height: 1.2em; color: #d2d2d2; text-align: left; padding: 10px; margin-bottom: 10px; -webkit-transition: all .3s; transition: all .3s; }
+#calculate .modelLst .product-name { font-size: 1.4em; line-height: 1.2em; color: #d2d2d2; text-align: left; padding: 10px; margin-bottom: 10px; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-#calculate #section1 .modelLst .product-name span { font-size: 0.75em; display: block; }
+#calculate .modelLst .product-name span { font-size: 0.75em; display: block; }
 
-@media (min-width: 576px) { #calculate #section1 .modelLst .product-name { padding: 0 10px; font-size: 1em; } }
+@media (min-width: 576px) { #calculate .modelLst .product-name { padding: 0 10px; font-size: 1em; } }
 
-#calculate #section1 .modelLst .btline { width: 100%; height: 2px; background-color: #404040; -webkit-transition: all .3s; transition: all .3s; overflow: hidden; position: relative; }
+#calculate .modelLst .btline { width: 100%; height: 2px; background-color: #404040; -webkit-transition: all 0.3s; transition: all 0.3s; overflow: hidden; position: relative; }
 
-#calculate #section1 .modelLst .btline span { display: block; position: absolute; width: 100%; height: 2px; left: -100%; margin-left: 200%; -webkit-transition: left .3s, margin-left .3s; transition: left .3s, margin-left .3s; background-color: #2baae1; }
+#calculate .modelLst .btline span { display: block; position: absolute; width: 100%; height: 2px; left: -100%; margin-left: 200%; -webkit-transition: left 0.3s, margin-left 0.3s; transition: left 0.3s, margin-left 0.3s; background-color: #2baae1; }
 
-#calculate #section1 .modelLst .cta-btn { font-size: 0; padding: 10px; }
+#calculate .modelLst .cta-btn { font-size: 0; padding: 10px; }
 
-@media (min-width: 576px) { #calculate #section1 .modelLst .cta-btn { padding: 10px; } }
+@media (min-width: 576px) { #calculate .modelLst .cta-btn { padding: 10px; } }
 
-#calculate #section1 .modelLst .cta-btn .comparison, #calculate #section1 .modelLst .cta-btn .lean-more { color: #fff; display: inline-block; width: 50%; cursor: pointer; -webkit-transition: all .3s; transition: all .3s; }
+#calculate .modelLst .cta-btn .comparison, #calculate .modelLst .cta-btn .lean-more { color: #fff; display: inline-block; width: 50%; cursor: pointer; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-#calculate #section1 .modelLst .cta-btn .comparison:hover, #calculate #section1 .modelLst .cta-btn .lean-more:hover { color: #2baae1; }
+#calculate .modelLst .cta-btn .comparison:hover, #calculate .modelLst .cta-btn .lean-more:hover { color: #2baae1; }
 
-#calculate #section1 .modelLst .cta-btn .comparison:hover span.icon, #calculate #section1 .modelLst .cta-btn .lean-more:hover span.icon { border-color: #2baae1; -webkit-transition: border .3s; transition: border .3s; }
+#calculate .modelLst .cta-btn .comparison:hover span.icon, #calculate .modelLst .cta-btn .lean-more:hover span.icon { border-color: #2baae1; -webkit-transition: border 0.3s; transition: border 0.3s; }
 
-#calculate #section1 .modelLst .cta-btn .comparison:hover span.icon:before, #calculate #section1 .modelLst .cta-btn .comparison:hover span.icon:after, #calculate #section1 .modelLst .cta-btn .lean-more:hover span.icon:before, #calculate #section1 .modelLst .cta-btn .lean-more:hover span.icon:after { background-color: #2baae1; }
+#calculate .modelLst .cta-btn .comparison:hover span.icon:before, #calculate .modelLst .cta-btn .comparison:hover span.icon:after, #calculate .modelLst .cta-btn .lean-more:hover span.icon:before, #calculate .modelLst .cta-btn .lean-more:hover span.icon:after { background-color: #2baae1; }
 
-#calculate #section1 .modelLst .cta-btn .comparison span, #calculate #section1 .modelLst .cta-btn .lean-more span { display: inline-block; font-size: 1em; }
+#calculate .modelLst .cta-btn .comparison span, #calculate .modelLst .cta-btn .lean-more span { display: inline-block; font-size: 1em; }
 
-@media (min-width: 576px) { #calculate #section1 .modelLst .cta-btn .comparison span, #calculate #section1 .modelLst .cta-btn .lean-more span { font-size: 0.9em; } }
+@media (min-width: 576px) { #calculate .modelLst .cta-btn .comparison span, #calculate .modelLst .cta-btn .lean-more span { font-size: 0.9em; } }
 
-#calculate #section1 .modelLst .cta-btn .comparison span.icon, #calculate #section1 .modelLst .cta-btn .lean-more span.icon { position: relative; width: 22px; height: 22px; border: 1px solid #707070; border-radius: 50%; vertical-align: middle; margin-right: 10px; -webkit-transition: all .3s; transition: all .3s; color: #707070; }
+#calculate .modelLst .cta-btn .comparison span.icon, #calculate .modelLst .cta-btn .lean-more span.icon { position: relative; width: 22px; height: 22px; border: 1px solid #707070; border-radius: 50%; vertical-align: middle; margin-right: 10px; -webkit-transition: all 0.3s; transition: all 0.3s; color: #707070; }
 
-#calculate #section1 .modelLst .cta-btn .comparison span.icon:before, #calculate #section1 .modelLst .cta-btn .comparison span.icon:after, #calculate #section1 .modelLst .cta-btn .lean-more span.icon:before, #calculate #section1 .modelLst .cta-btn .lean-more span.icon:after { content: ''; display: block; background-color: #707070; -webkit-transition: all .3s; transition: all .3s; }
+#calculate .modelLst .cta-btn .comparison span.icon:before, #calculate .modelLst .cta-btn .comparison span.icon:after, #calculate .modelLst .cta-btn .lean-more span.icon:before, #calculate .modelLst .cta-btn .lean-more span.icon:after { content: ''; display: block; background-color: #707070; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-#calculate #section1 .modelLst .cta-btn .comparison span.add:before, #calculate #section1 .modelLst .cta-btn .comparison span.add:after, #calculate #section1 .modelLst .cta-btn .lean-more span.add:before, #calculate #section1 .modelLst .cta-btn .lean-more span.add:after { width: 70%; height: 2px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-7px, -1px); transform: translate(-7px, -1px); -webkit-transition: all .3s; transition: all .3s; }
+#calculate .modelLst .cta-btn .comparison span.add:before, #calculate .modelLst .cta-btn .comparison span.add:after, #calculate .modelLst .cta-btn .lean-more span.add:before, #calculate .modelLst .cta-btn .lean-more span.add:after { width: 70%; height: 2px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-7px, -1px); transform: translate(-7px, -1px); -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-#calculate #section1 .modelLst .cta-btn .comparison span.add:before, #calculate #section1 .modelLst .cta-btn .lean-more span.add:before { -webkit-transform: translate(-7px, -1px) rotate(90deg); transform: translate(-7px, -1px) rotate(90deg); }
+#calculate .modelLst .cta-btn .comparison span.add:before, #calculate .modelLst .cta-btn .lean-more span.add:before { -webkit-transform: translate(-7px, -1px) rotate(90deg); transform: translate(-7px, -1px) rotate(90deg); }
 
-#calculate #section1 .modelLst .cta-btn .comparison span.arrow span, #calculate #section1 .modelLst .cta-btn .lean-more span.arrow span { width: 0%; height: 2px; background-color: #2baae1; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: width .3s; transition: width .3s; }
+#calculate .modelLst .cta-btn .comparison span.arrow span, #calculate .modelLst .cta-btn .lean-more span.arrow span { width: 0%; height: 2px; background-color: #2baae1; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: width 0.3s; transition: width 0.3s; }
 
-#calculate #section1 .modelLst .cta-btn .comparison span.arrow:before, #calculate #section1 .modelLst .cta-btn .comparison span.arrow:after, #calculate #section1 .modelLst .cta-btn .lean-more span.arrow:before, #calculate #section1 .modelLst .cta-btn .lean-more span.arrow:after { width: 40%; height: 2px; position: absolute; top: 50%; left: 50%; -webkit-transition: all .3s; transition: all .3s; }
+#calculate .modelLst .cta-btn .comparison span.arrow:before, #calculate .modelLst .cta-btn .comparison span.arrow:after, #calculate .modelLst .cta-btn .lean-more span.arrow:before, #calculate .modelLst .cta-btn .lean-more span.arrow:after { width: 40%; height: 2px; position: absolute; top: 50%; left: 50%; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-#calculate #section1 .modelLst .cta-btn .comparison span.arrow:before, #calculate #section1 .modelLst .cta-btn .lean-more span.arrow:before { -webkit-transform: translate(-3px, 2px) rotate(-45deg); transform: translate(-3px, 2px) rotate(-45deg); }
+#calculate .modelLst .cta-btn .comparison span.arrow:before, #calculate .modelLst .cta-btn .lean-more span.arrow:before { -webkit-transform: translate(-3px, 2px) rotate(-45deg); transform: translate(-3px, 2px) rotate(-45deg); }
 
-#calculate #section1 .modelLst .cta-btn .comparison span.arrow:after, #calculate #section1 .modelLst .cta-btn .lean-more span.arrow:after { -webkit-transform: translate(-3px, -3px) rotate(45deg); transform: translate(-3px, -3px) rotate(45deg); }
+#calculate .modelLst .cta-btn .comparison span.arrow:after, #calculate .modelLst .cta-btn .lean-more span.arrow:after { -webkit-transform: translate(-3px, -3px) rotate(45deg); transform: translate(-3px, -3px) rotate(45deg); }
 
-#calculate #section1 .modelLst .cta-btn .comparison.active { color: #2baae1; }
+#calculate .modelLst .cta-btn .comparison.active { color: #2baae1; }
 
-#calculate #section1 .modelLst .cta-btn .comparison.active span.add { border-color: #2baae1; }
+#calculate .modelLst .cta-btn .comparison.active span.add { border-color: #2baae1; }
 
-#calculate #section1 .modelLst .cta-btn .comparison.active span.add:before, #calculate #section1 .modelLst .cta-btn .comparison.active span.add:after { background-color: #2baae1; }
+#calculate .modelLst .cta-btn .comparison.active span.add:before, #calculate .modelLst .cta-btn .comparison.active span.add:after { background-color: #2baae1; }
 
-#calculate #section1 .modelLst .cta-btn .comparison.active span.add:before { width: 35%; -webkit-transform: translate(-7px, 2px) rotate(45deg); transform: translate(-7px, 2px) rotate(45deg); }
+#calculate .modelLst .cta-btn .comparison.active span.add:before { width: 35%; -webkit-transform: translate(-7px, 2px) rotate(45deg); transform: translate(-7px, 2px) rotate(45deg); }
 
-#calculate #section1 .modelLst .cta-btn .comparison.active span.add:after { width: 60%; -webkit-transform: translate(-4px, 0px) rotate(-45deg); transform: translate(-4px, 0px) rotate(-45deg); }
+#calculate .modelLst .cta-btn .comparison.active span.add:after { width: 60%; -webkit-transform: translate(-4px, 0px) rotate(-45deg); transform: translate(-4px, 0px) rotate(-45deg); }
 
-#calculate #section1 .modelLst .cta-btn .lean-more:hover span.arrow span { display: block; width: 55%; }
+#calculate .modelLst .cta-btn .lean-more:hover span.arrow span { display: block; width: 55%; }
 
-#calculate #section1 .modelLst .cta-btn .lean-more:hover span.arrow:before, #calculate #section1 .modelLst .cta-btn .lean-more:hover span.arrow:after { width: 35%; }
+#calculate .modelLst .cta-btn .lean-more:hover span.arrow:before, #calculate .modelLst .cta-btn .lean-more:hover span.arrow:after { width: 35%; }
 
-#calculate #section1 .modelLst .cta-btn .lean-more:hover span.arrow:before { -webkit-transform: translate(0px, 1px) rotate(-45deg); transform: translate(0px, 1px) rotate(-45deg); }
+#calculate .modelLst .cta-btn .lean-more:hover span.arrow:before { -webkit-transform: translate(0px, 1px) rotate(-45deg); transform: translate(0px, 1px) rotate(-45deg); }
 
-#calculate #section1 .modelLst .cta-btn .lean-more:hover span.arrow:after { -webkit-transform: translate(0px, -3px) rotate(45deg); transform: translate(0px, -3px) rotate(45deg); }
+#calculate .modelLst .cta-btn .lean-more:hover span.arrow:after { -webkit-transform: translate(0px, -3px) rotate(45deg); transform: translate(0px, -3px) rotate(45deg); }
 
-#calculate #section1 .modelCont .type-item { padding: 2em 0; }
+#calculate .modelCont .type-item { padding: 2em 0; }
 
-@media (min-width: 992px) { #calculate #section1 .modelCont .type-item { padding: 4em 0; } }
+@media (min-width: 992px) { #calculate .modelCont .type-item { padding: 4em 0; } }
 
-#calculate .car-comparison { position: fixed; width: 40px; height: 105px; top: 0; bottom: 0; margin: auto 0; right: 0; font-size: 1.3em; color: #fff; padding: 10px 10px; background-image: -webkit-gradient(linear, left bottom, left top, from(#0077b4), color-stop(51%, #28aae1), to(#28aae1)); background-image: linear-gradient(to top, #0077b4, #28aae1 51%, #28aae1); -webkit-transition: all .5s; transition: all .5s; opacity: 0; z-index: -1; }
+.car-comparison { width: 40px; position: fixed; top: 50%; right: 0; font-size: 1.3em; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 
-#calculate .car-comparison.fixed { opacity: 1; z-index: 5; }
+.car-comparison a { display: block; width: 100%; -webkit-writing-mode: vertical-lr; -ms-writing-mode: tb-lr; writing-mode: vertical-lr; color: #fff; padding: 10px 10px 5px 10px; margin-bottom: 15px; background-image: -webkit-gradient(linear, left bottom, left top, from(#0077b4), color-stop(51%, #28aae1), to(#28aae1)); background-image: linear-gradient(to top, #0077b4, #28aae1 51%, #28aae1); }
 
-#calculate .car-comparison:hover { background-image: -webkit-gradient(linear, left bottom, left top, from(#0088c6), to(#0088c6)); background-image: linear-gradient(to top, #0088c6, #0088c6); }
+.car-comparison a:hover { background-image: -webkit-gradient(linear, left bottom, left top, from(#0088c6), to(#0088c6)); background-image: linear-gradient(to top, #0088c6, #0088c6); }
 
-#calculate .car-comparison span { display: block; }
+.car-comparison.fixed { opacity: 1; z-index: 5; }
 
-#calculate .car-comparison span:before, #calculate .car-comparison span:after { content: ''; display: block; position: absolute; width: 10px; height: 2px; background-color: #fff; }
+.car-comparison span { width: 100%; height: 17px; display: inline-block; position: relative; }
 
-#calculate .car-comparison span:before { -webkit-transform: translate(8px, 9px) rotate(-45deg); transform: translate(8px, 9px) rotate(-45deg); }
+.car-comparison span:before, .car-comparison span:after { content: ''; display: block; position: absolute; width: 10px; height: 2px; background-color: #fff; }
 
-#calculate .car-comparison span:after { -webkit-transform: translate(2px, 9px) rotate(45deg); transform: translate(2px, 9px) rotate(45deg); }
+.car-comparison span:before { -webkit-transform: translate(8px, 9px) rotate(-45deg); transform: translate(8px, 9px) rotate(-45deg); }
+
+.car-comparison span:after { -webkit-transform: translate(2px, 9px) rotate(45deg); transform: translate(2px, 9px) rotate(45deg); }
 
 @keyframes optop { from { opacity: 0;
     -webkit-transform: translateY(-50%);
