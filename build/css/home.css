@@ -303,7 +303,7 @@
   #home #section2 .tabContent .informationLeft { padding-bottom: 20px; }
   #home #section2 .tabContent .informationRight { border-top: 1px solid #ffffff; padding-top: 20px; } }
 
-#home #section3 { background: #000000; }
+#home #section3 { background: #000000; width: 100%; overflow: hidden; }
 
 #home #section3 .myContainer { width: 90%; max-width: 1340px; margin: 0 auto; position: relative; background: #000000; }
 
@@ -477,7 +477,13 @@
 @media (min-width: 1499px) { #home #section4 .advantage .item { padding: 40px 0; }
   #home #section4 .advantage .icon { padding-top: 3%; } }
 
-#home #section5 .video-container { background-color: #111111; overflow: hidden; width: 100%; position: relative; padding-bottom: 56.25%; height: 0; }
+#home #section5 { background: #111111; }
+
+#home #section5 .video-container { background-color: #111111; overflow: hidden; }
+
+#home #section5 .video-container .video-slider { width: 100%; }
+
+#home #section5 .video-container .video-slider li { width: 100%; position: relative; padding-bottom: 18.75%; height: 0; background-color: #111111; }
 
 #home #section5 .video-container .youtube-preview { display: block; background-size: cover; background-position: center; cursor: pointer; height: 100%; left: 0; position: absolute; width: 100%; }
 
@@ -493,9 +499,26 @@
 
 #home #section5 .youtube-preview__button svg:not(:root) { overflow: hidden; }
 
-#home #section5 #youtube-video { height: 100%; opacity: 1; visibility: visible; position: absolute; top: 0; left: 0; height: 100%; vertical-align: middle; width: 100%; }
+#home #section5 #youtube-video1, #home #section5 #youtube-video2, #home #section5 #youtube-video3 { height: 100%; opacity: 1; visibility: visible; position: absolute; top: 0; left: 0; height: 100%; vertical-align: middle; width: 100%; }
 
 #home #section5 #youtube-pause { opacity: 0; }
+
+#home #section5 .slick-list { width: 100%; }
+
+#home #section5 .slick-prev, #home #section5 .slick-next { overflow: hidden; width: 38.55px; }
+
+#home #section5 .slick-prev::before, #home #section5 .slick-prev::after, #home #section5 .slick-next::before, #home #section5 .slick-next::after { width: 50px; background-color: #ffffff; }
+
+#home #section5 .slick-prev:hover::before, #home #section5 .slick-prev:hover::after, #home #section5 .slick-next:hover::before, #home #section5 .slick-next:hover::after { background-color: #2baae1; }
+
+#home #section5 .slick-prev { left: 15px; }
+
+#home #section5 .slick-next { right: 15px; }
+
+@media (max-width: 768px) { #home #section5 .slick-prev, #home #section5 .slick-next { width: 28px; }
+  #home #section5 .slick-prev::before, #home #section5 .slick-prev::after, #home #section5 .slick-next::before, #home #section5 .slick-next::after { width: 30px; }
+  #home #section5 .slick-prev { left: 0px; }
+  #home #section5 .slick-next { right: 0px; } }
 
 footer .mbfs-logo-b { display: none; }
 
