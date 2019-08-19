@@ -483,7 +483,7 @@
 
 #home #section5 .video-container .video-slider { width: 100%; }
 
-#home #section5 .video-container .video-slider li { width: 100%; position: relative; padding-bottom: 18.75%; height: 0; background-color: #111111; }
+#home #section5 .video-container .video-slider li { width: 100%; position: relative; padding-bottom: 16.25%; height: 0; background-color: #111111; }
 
 #home #section5 .video-container .youtube-preview { display: block; background-size: cover; background-position: center; cursor: pointer; height: 100%; left: 0; position: absolute; width: 100%; }
 
